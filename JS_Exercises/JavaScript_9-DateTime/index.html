@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date And Time</title>
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+    <script src="./Assets/JS/script.js"></script>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <div class="p-3 mt-5 bg-light text-dark">
+                <div>
+                    <h2 class="text-center">Current Date Time</h2>
+                    <p class="text-center">Click The Show Button To See Date And Time</p>
+
+                    <div class="d-flex gap-5 justify-content-center p-3">
+                        <button type="submit" onclick="showDateTime(event)" class="btn btn-warning btn-lg">Show</button>
+                        <button type="reset" onclick="clearForm()" class="btn btn-warning btn-lg">Reset</button>
+                    </div>
+
+                    <div id="dataContainer" class="container d-none">
+                        <div class="d-flex gap-4 justify-content-center">
+                            <div class="d-flex flex-column fw-bold">
+                                <p class="m-0">Year</p>
+                                <p id="year" class="text-center"></p>
+                            </div>
+
+                            <div class="fw-bold">
+                                <p class="m-0">Month</p>
+                                <p id="month" class="text-center"></p>
+                            </div>
+
+                            <div class="fw-bold">
+                                <p class="m-0">Date</p>
+                                <p id="date" class="text-center"></p>
+                            </div>
+
+                            <div class="fw-bold">
+                                <p class="m-0">Hour</p>
+                                <p id="hour" class="text-center"></p>
+                            </div>
+
+                            <div class="fw-bold">
+                                <p class="m-0">Minutes</p>
+                                <p id="minutes" class="text-center"></p>
+                            </div>
+
+                            <div class="fw-bold">
+                                <p class="m-0">Seconds</p>
+                                <p id="seconds" class="text-center"></p>
+                            </div>
+
+                            <div class="fw-bold">
+                                <p class="m-0">MilliSeconds</p>
+                                <p id="milliSeconds" class="text-center"></p>
+                            </div>
+                        </div>
+
+                        <h5 class="text-center mt-5">GMT +0530 (Indian Standard Time)</h5>
+
+                        <table class="table text-center mt-4">
+                            <tr>
+                                <th>Local Time & Date</th>
+                                <td id="local"></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">UTC</th>
+                                <td id="result"></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">UTC MilliSeconds</th>
+                                <td id="utcMilliSeconds"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

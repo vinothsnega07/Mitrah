@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check First And Last Letter</title>
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+    <script src="./Assets/JS/script.js"></script>
+</head>
+
+<body>
+    <form onsubmit="checkStringChar(event)">
+        <div class="container">
+            <div class="p-3 mt-5 bg-warning text-dark">
+                <div>
+                    <h2 class="text-center">Check First And Last Char Same Or Not</h2>
+                    <input type="text" id="sentence" placeholder="Type Sentence....." class="w-100">
+                    <div class="d-flex gap-5 justify-content-center p-3">
+                        <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+                        <button type="reset" onclick="reSet()" class="btn btn-secondary btn-lg">Reset</button>
+                    </div>
+
+                    <p id="message" class="fw-bold  text-center"></p>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

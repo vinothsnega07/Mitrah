@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition And Multiplication</title>
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+    <script src="./Assets/JS/script.js"></script>
+</head>
+<body>
+    <form onsubmit="getValidNums(event)">
+        <div class="container">
+            <div class="p-3 mt-5 bg-warning-subtle text-warning-emphasis">
+                <div>
+                    <h2 class="text-center">Add & Multiply The Numbers</h2>
+                    <input type="text" id="number" placeholder="Enter The Numbers Like 10,20,30....." class="w-100">
+                    <div class="d-flex gap-5 justify-content-center p-3">
+                        <button type="submit"  onclick="additionMultiplication('addition')"   class="btn btn-warning btn-lg">Add</button>
+                        <button type="submit"  onclick="additionMultiplication('multiply')"    class="btn btn-warning btn-lg">Multiply</button>
+                        <button type="reset" onclick="clearForm()" class="btn btn-warning btn-lg">Reset</button>
+                    </div>
+                    <p id="message" class="fw-bold  text-center"></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

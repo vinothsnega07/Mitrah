@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+    <script src="./Assets/JS/script.js"></script>
+    <title>Check Box Validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="p-3 mt-4 bg-info-subtle text-info-emphasis">
+            <div>
+                <h2 class="text-center">Check Box</h2>
+                <div class="d-flex flex-column  align-items-center">
+                    <p><input type="checkbox" name="myCheck">
+                        <label>Apple</label>
+                    </p>
+                    <p><input type="checkbox" name="myCheck">
+                        <label>Orange</label>
+                    </p>
+                    <p><input type="checkbox" name="myCheck">
+                        <label>Mango</label>
+                    </p>
+                    <p><input type="checkbox" name="myCheck">
+                        <label>Grapes</label>
+                    </p>
+                    <p><input type="checkbox" name="myCheck">
+                        <label>PineApple</label>
+                    </p>
+                </div>
+                <div class="d-flex gap-5 justify-content-center p-3">
+                    <button type="submit" onclick="checkValidation('select')" class="btn btn-secondary btn-lg">SelectAll</button>
+                    <button type="reset" onclick="checkValidation('deselect')" class="btn btn-secondary btn-lg" >UnSelectAll</button>
+                    <button type="reset" onclick="checkValidation('modify')" class="btn btn-secondary btn-lg">Modify</button>
+                </div>
+                <p id="message" class="fw-bold  text-center"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
